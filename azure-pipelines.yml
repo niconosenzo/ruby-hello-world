@@ -14,6 +14,6 @@ steps:
     docker build -t quay.io/nnosenzo/nico_test:latest .
     docker --version
     docker login -u="nnosenzo" -p="nnosenzo" quay.io
-    docker inspect quay.io/nnosenzo/nico_test:latest
+    docker manifest inspect quay.io/nnosenzo/nico_test:latest
     docker push quay.io/nnosenzo/nico_test:latest
   displayName: 'Run a multi-line script'
